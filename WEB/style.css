@@ -1,31 +1,95 @@
-nav {
-    background-color: #505050;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Exo', sans-serif;
+@media(max-width: 768px) {
+    .topnav {
+        display: none;
+    }
+
+    nav {
+        background-color: #505050;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burguer {
+        overflow: hidden;
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+
+    }
 }
 
-.topnav {
-    overflow: hidden;
-    text-align: right;
-    display: flex;
-    flex-direction: row;
+@media(min-width: 769px) and (max-width: 1200px) {
+
+    .burguer {
+        visibility: collapse;
+    }
+
+    .topnav {
+        overflow: hidden;
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .topnav a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+
+    }
+
+    nav {
+        background-color: #505050;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Exo', sans-serif;
+    }
 }
 
-.topnav a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+@media(min-width: 1201px) {
 
+    .burguer {
+        visibility: collapse;
+    }
+
+    .topnav {
+        overflow: hidden;
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .topnav a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+
+    }
+
+    nav {
+        background-color: #505050;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Exo', sans-serif;
+    }
 }
-
 
 .banner {
     background-image: url(https://www.cardamomo.news/__export/1618378062720/sites/debate/img/2021/04/13/992693ae-b5cb-4e1d-a329-b8e500354661_crop1618376822647.jpg_242310155.jpg);
@@ -59,6 +123,7 @@ footer {
 
 .nosotros {
     background-color: #999E60;
+    flex-wrap: wrap;
 
 }
 
@@ -77,6 +142,7 @@ footer {
     justify-content: space-around;
     padding: 10px 60px 20px 60px;
     list-style: none;
+    flex-wrap: wrap;
 
 }
 
@@ -100,10 +166,13 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 }
 
-.product, .detail {
+.product,
+.detail,
+.cart {
     font-family: 'Exo', sans-serif;
 }
 
@@ -148,4 +217,49 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.cart_art {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cart_art p {
+    width: 30%;
+}
+
+.cantidad {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.precio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.total h2 {
+    margin: 3%;
 }
