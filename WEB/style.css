@@ -247,6 +247,17 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
 }
+.comprar{
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 5%;
+   margin-bottom: 2%;
+}
+
+.comprar1{
+    font-size: 30px;
+}
+
 
 button {
     border-radius: 15px;
@@ -262,4 +273,56 @@ button {
 
 .total h2 {
     margin: 3%;
+}
+
+.encabezado {
+
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.fondo {
+    background-image: url(https://github.com/FacundoOR/Rosas-ERE/blob/main/WEB/Imagen1.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: bottom 100% right 82%;
+    background-color: #505050;
+    height: 100%;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    font-family: 'Advent Pro', sans-serif;
+    color: white;
+}
+
+input {
+    border-radius: 10px;
+    border-color: white;
+    background-color: #505050;
+    font-family: 'Advent Pro', sans-serif;
+    color: white;
+}
+
+#user,
+#pass,
+#nombre,
+#apellido,
+#email {
+    background-color: white;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social a {
+    margin: 10px;
 }
